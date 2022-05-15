@@ -6,5 +6,7 @@
     "browser": true,
     "node": false
   },
-  "rules": []
+  "rules": {
+    "quotes": "off"
+  }
 }

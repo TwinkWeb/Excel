@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isProd = process.env.NODE_ENV === "production";
 const isDev = !isProd;
-
+console.log("asdf");
 const filename = (ext) => (isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`);
 
 const isLoader = () => {
@@ -23,7 +23,7 @@ const isLoader = () => {
     loaders.push("eslint-loader");
   }
 
-  return loader;
+  return loaders;
 };
 
 module.exports = {
